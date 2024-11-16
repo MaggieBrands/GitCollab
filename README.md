@@ -1,2 +1,2 @@
 # GitCollab
-GitCollab for Week 12 in Intro ti IT
+GitCollab for week 12 of Intro to IT
