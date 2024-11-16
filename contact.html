@@ -3,9 +3,25 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Maggie Brands</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
 
-    <style> 
+    <style>
+      header h1 {
+    font-weight: bold;
+    font-variant: small-caps;
+    font-size: 3rem;
+    text-decoration: none;
+    color: rgb(2, 105, 17);
+    text-align: center;
+    border-bottom: 1px rgb(48, 47, 63) solid;
+    
+    }
+    h2 {
+        text-align: center;
+        font-size: 2.5rem;
+        color: rgb(12, 147, 33);
+    }
     h1 h2 h3{
 	background-color:lightpurple;
 	text-align: center;
@@ -25,15 +41,15 @@
 
     header nav{
 	border-radius:10px;
-    	width:75%;
-    	height: 45px;
+    	width:45%;
+    	height: 20px;
    	margin-left:auto;
-    	margin-right:auto;
+    margin-right:auto;
 	margin-bottom: 15px;
 	background-image: linear-gradient(to bottom, #dde484, #9c9a0d); 
 	box-shadow:5cap;
 	padding:10px 0px;
-	      }
+	}
    nav a{
 	color:#51328b;  
    	}
@@ -50,6 +66,9 @@
 	text-align:center;
     margin:auto auto;
    	   }
+    form {
+        text-align: center;
+    }
 
     </style>
 
@@ -59,30 +78,55 @@
 
 <header>
 
-        <h1>Maggie Brands</h1>
-        <h2>My Portfolio</h2>
+        <h1>Thomsens Garden Center</h1>
+        
         <nav role="navigation" id="mainNav" class="navigation">
             <ul>
-                <li><a href="index.html" class="current">Home!</a></li>
-                <li><a href="about.html">About!</a></li>
-                <li><a href="#" class="current">Contact!</a></li>
+                <li><a href="index.html" class="current">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="#" class="current">Contact</a></li>
             </ul>
         </nav>
 
 </header>
 
 <main id="main">
-
-    <h2>Welcome</h2>
-
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, asperiores. Vitae laborum qui officiis velit facere blanditiis dolore, architecto corporis expedita quos ea. Officiis quos, aperiam molestias temporibus optio eligendi.</p>
-
-    <br>
-
-    <h2>About Us</h2>
+    <h2>Contact Us!</h2>
+    <p>29754 156th Avenue <br>
+        Saint Joseph, MN 56374 <br>
+        (320) 363-7375 <br>
+        <a href="info@thomsensgardencenter.com" target="blank">Thomsens Garden Center Email</a> <br> <br>
         
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, asperiores. Vitae laborum qui officiis velit facere blanditiis dolore, architecto corporis expedita quos ea. Officiis quos, aperiam molestias temporibus optio eligendi. <br><br><font color="darkblue"><em>We bring you the education, you bring lively ambitions to learn!</font></em></p>
+        Off-Season Business/Office Hours (beginning October 21) : <br>
+        Mon – Fri: 8:00am – 4:30pm <br>
+        Sat – Sun: Closed except on Special Event Days</p>
 
+ <br><br></p>
+<form action="submit.php" method="post">
+    <fieldset>
+        <legend><strong>Fill out this form if you would like to know more!</strong>
+        </legend>
+        <label>First Name: <input type="text" name="firstname" placeholder="Enter your first name here!"></label><br>
+        <label>Last Name: <input type="text" name="lastname" placeholder="Enter your last name here!"></label><br>
+        <label>Email Address: <input type="text" name="email" placeholder="Enter email here!"><br>
+        </label><br>
+       
+        <label>Select which services you would like to know more about!:
+        <br>
+            <input type="checkbox" name="q5" value="checkbox">Container Design<br>
+            <input type="checkbox" name="q5" value="checkbox">Landscape Design<br>
+            <input type="checkbox" name="q5" value="checkbox">Gardening<br>
+            <input type="checkbox" name="q5" value="checkbox">Delivery Questions <br>
+        </label><br>
+        <label>Would you like to be notified of upcoming events?:<br>
+                <input type="checkbox" name="q5" value="checkbox">Yes<br>
+                <input type="checkbox" name="q5" value="checkbox">No<br>
+        </label><br>
+        <input type="hidden" name="hidden" value="hidden">
+            <input type="submit" value="submit"> <input type="reset" value="reset">
+    </fieldset>
+</form>
+   
 </main>
 
 <footer>
