@@ -13,3 +13,4 @@ Maggie - Information/Layout - writes up a general html layout and adds files for
             Maggie's takeaways:
                 -Github is a very interesting way to collab with others remotely although it is a bit confusing. 
                 -Learned out commits and pull requests work
+                -Learned how to deal with conflicts in merges
